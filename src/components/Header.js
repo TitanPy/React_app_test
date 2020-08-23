@@ -1,51 +1,29 @@
-import React, { Component } from 'react';
-import logo from '../assets/images/logo.svg';
+import React, { Component } from "react";
+import logo from "../assets/images/logo.svg";
+import ExitToAppIcon from "@material-ui/icons/ExitToApp";
 
 class Header extends Component {
-    render() {
-        return (
-            <React.Fragment>
-                <header id="header">
-                    <div className="center">
-                        {/*LOGO */}
-                        <div id="logo">
-                            <img src={logo} className="app-logo" alt="Logotipo" />
-                            <span id="brand">
-                                <strong>Fisio</strong>App
-                            </span>
-                        </div>
-
-                        {/*MENU */}
-                        <nav id="menu">
-                            <ul>
-                                <li>
-                                    <a href="#">Inicio</a>
-                                </li>
-                                <li>
-                                    <a href="#">Blog</a>
-                                </li>
-                                <li>
-                                    <a href="#">Formulario</a>
-                                </li>
-                                <li>
-                                    <a href="#">Pagina 1</a>
-                                </li>
-                                <li>
-                                    <a href="#">Pagina 2</a>
-                                </li>
-                            </ul>
-                        </nav>
-
-                        {/* LIMPIAR FLOTADOS */}
-                        <div className="clearfix"></div>
-                    </div>
-                </header>
-            </React.Fragment>
-        );
-    }
-
+  render() {
+    return (
+      <React.Fragment>
+        <header id="header">
+          <div className="center">
+            <div id="logo">
+              <img src={logo} className="app-logo" alt="Logotipo" />
+              <span id="brand">
+                <strong>Fisio</strong>App
+              </span>
+            </div>
+            <div id="exit-app">
+              <ExitToAppIcon fontSize="large" />
+              <div className="clearfix"></div>
+            </div>
+            <div className="clearfix"></div>
+          </div>
+        </header>
+      </React.Fragment>
+    );
+  }
 }
 
 export default Header;
-
-
