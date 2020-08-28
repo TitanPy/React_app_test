@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import avatar from "../assets/images/avatar_4.png";
+//import avatar from "../assets/images/avatar_4.png";
 
 
 class Sidebar extends Component {
