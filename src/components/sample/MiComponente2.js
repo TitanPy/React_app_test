@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import MensajeEstatico from './sample/MensajeEstatico';
+import MensajeEstatico from './MensajeEstatico';
 
 class MiComponente2 extends Component{
     render(){

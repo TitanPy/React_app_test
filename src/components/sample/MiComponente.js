@@ -17,6 +17,7 @@ class MiComponente extends Component {
             return <li key={i}>{ingrediente}</li>;
           })}
         </ol>
+        
       </React.Fragment>
     );
   }

@@ -33,12 +33,31 @@ class Peliculas extends Component {
         });
     }
 
+
+    componentDidMount(){ // se va a montar despues de haber cargado la pagina
+        alert("se acaba de cargar el componente de peliculas")
+    }
+    // componentWillMount() --> se va a montar antes de cargar la pagina
     render (){
         var pStyle = {
             background:'green',
             color: 'white',
             padding: '10px',
             }
+        
+        var favorita;
+        if(this.state.favorita.titulo){
+            favorita = (
+                <p className="favorita" style={pStyle}>
+                <strong>La peliculas favorita es: </strong>
+                <span>{this.state.favorita.titulo}</span>
+                </p>
+            )
+        }else {
+            favorita=(
+            <p>NO HAY PELICULAS FAVORITAS</p>
+            )
+        }
 
 
         return(
@@ -48,15 +67,27 @@ class Peliculas extends Component {
             <p>
                 <button onClick={this.cambiarTitulo}>Cambiar_titulo</button>
             </p>
-
-{/*   condicional  */}
+{/* diferentes condicionales, montado con javasript definido antes del render pero tambien se puede montar
+despues del render con jsx como esta en el ejemplo comentado*/}
+              {/* condicional }
             {this.state.favorita.titulo &&
                 <p className="favorita" style={pStyle}>
                 <strong>La peliculas favorita es: </strong>
                 <span>{this.state.favorita.titulo}</span>
                 </p>
-            }
+            } */}
 
+            {/*{this.state.favorita.titulo ? (
+                <p className="favorita" style={pStyle}>
+                <strong>La peliculas favorita es: </strong>
+                <span>{this.state.favorita.titulo}</span>
+                </p>
+                ) : (
+                    <p>NO HAY PELICULAS FAVORITAS</p>
+                )
+            }
+        */}
+            {favorita}
 
             
             { /*crear componente pelicula */ }
