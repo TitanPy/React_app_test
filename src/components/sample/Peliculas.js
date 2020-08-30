@@ -35,7 +35,7 @@ class Peliculas extends Component {
 
 
     componentDidMount(){ // se va a montar despues de haber cargado la pagina
-        alert("se acaba de cargar el componente de peliculas")
+       // alert("se acaba de cargar el componente de peliculas")
     }
     // componentWillMount() --> se va a montar antes de cargar la pagina
     render (){
