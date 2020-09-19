@@ -5,11 +5,10 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 // Importar componentes
 import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
-import AltaPaciente from "./components/AltaPaciente";
-// import MiComponente from "./components/sample/MiComponente";
-// import MiComponente2 from "./components/sample/MiComponente2";
-// import Peliculas from "./components/sample/Peliculas";
-// 
+import MiComponente from "./components/sample/MiComponente";
+import MiComponente2 from "./components/sample/MiComponente2";
+import Peliculas from "./components/sample/Peliculas";
+import Formulario from "./components/sample/Formulario";
 import Error from "./components/sample/Error";
 
 // // Sample
@@ -23,8 +22,7 @@ class Router extends Component {
         <Sidebar />
         <Switch>
           {/* AQUI IRAN TODAS LAS RUTAS */}
-          <Route exact path="/alta_pacientes" component={AltaPaciente} />
-          {/* <Route exact path="/home" component={Peliculas} />
+          <Route exact path="/home" component={Peliculas} />
           <Route exact path="/ruta-prueba" component={MiComponente} />
           <Route exact path="/segunda-ruta" component={MiComponente2} />
           <Route exact path="/formulario" component={Formulario} />
@@ -47,7 +45,7 @@ class Router extends Component {
                 </div>
               );
             }}
-          /> */}
+          />
           <Route component={Error} />
         </Switch>
       </BrowserRouter>

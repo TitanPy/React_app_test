@@ -15,7 +15,7 @@ class Sidebar extends Component {
               <li>
                 <NavLink to="/home" activeClassName="active">Inicio</NavLink>
               </li>
-              <li>
+              {/* <li>
                 <NavLink to="/ruta-prueba" activeClassName="active">Ruta Pruebas</NavLink>
               </li>
               <li>
@@ -23,9 +23,9 @@ class Sidebar extends Component {
               </li>
               <li>
                 <NavLink to="/pagina-1" activeClassName="active">Pagina 1</NavLink>
-              </li>
-              <li>P
-                <NavLink to="/pruebas/daniel" activeClassName="active">Nombre</NavLink>
+              </li> */}
+              <li>
+                <NavLink to="/alta_pacientes" activeClassName="active">Alta Pacientes</NavLink>
               </li>
             </ul>
           </div>
