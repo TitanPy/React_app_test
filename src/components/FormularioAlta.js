@@ -77,13 +77,13 @@ class FormularioAlta extends Component {
           </div>
         )}
         {/* crear un formulario */}
-        <form className="mid-form" onSubmit={this.recibirFormulario}>
-          <div className="form-group">
-            <label htmlFor="nombre">Nombre</label>
-            <input type="text" name="nombre" ref={this.nombreRef} onChange={this.changeState}/>
+        <form className='form-altapaciente' onSubmit={this.recibirFormulario}>
+          <div className="form-altapaciente__nombre">
+            <label htmlFor="nombre">Nombre:</label>
+            <input name="nombre" ref={this.nombreRef} onChange={this.changeState}/>
           </div>
 
-          <div className="form-group">
+          <div className="form-altapaciente__apellido">
             <label htmlFor="apellidos">Apellidos</label>
             <input type="text" name="apellidos" ref={this.apellidoRef} onChange={this.changeState} />
           </div>

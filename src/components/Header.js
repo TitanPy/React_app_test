@@ -6,20 +6,12 @@ class Header extends Component {
   render() {
     return (
       <React.Fragment>
-        <header id="header">
-          <div className="center">
-            <div id="logo">
-              <img src={logo} className="app-logo" alt="Logotipo" />
-              <span id="brand">
-                <strong>Fisio</strong>App
-              </span>
-            </div>
-            <div id="exit-app">
-              <ExitToAppIcon fontSize="large" />
-              <div className="clearfix"></div>
-            </div>
-            <div className="clearfix"></div>
-          </div>
+        <header className="header">
+          <img src={logo} className="header__logo" />
+          <span className="header__title">
+            <strong>Fisio</strong>App
+          </span>
+          <ExitToAppIcon className="header__exit" fontSize="large" />
         </header>
       </React.Fragment>
     );

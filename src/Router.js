@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
 import AltaPaciente from "./components/AltaPaciente";
+import Pacientes from "./components/Pacientes";
 // import MiComponente from "./components/sample/MiComponente";
 // import MiComponente2 from "./components/sample/MiComponente2";
 // import Peliculas from "./components/sample/Peliculas";
@@ -24,6 +25,7 @@ class Router extends Component {
         <Switch>
           {/* AQUI IRAN TODAS LAS RUTAS */}
           <Route exact path="/alta_pacientes" component={AltaPaciente} />
+          <Route exact path="/pacientes" component={Pacientes} />
           {/* <Route exact path="/home" component={Peliculas} />
           <Route exact path="/ruta-prueba" component={MiComponente} />
           <Route exact path="/segunda-ruta" component={MiComponente2} />
