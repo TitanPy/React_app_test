@@ -7,23 +7,23 @@ class Sidebar extends Component {
     return (
       <React.Fragment>
         <div className="sidebar">
-          <div className="sidebar__avatar">
+          <p className="sidebar__avatar">
             <h4>AQUI VA EL AVATAR + NOMBRE</h4>
-          </div>
+          </p>
           <hr className="sidebar__line" />
           <ul className="sidebar__menu">
             <li>
-              <NavLink to="/home" activeClassName="active" className='sidebar__link'>
+              <NavLink to="/home" activeClassName="active">
                 Inicio
               </NavLink>
             </li>
             <li>
-              <NavLink to="/alta_pacientes" activeClassName="active" className='sidebar__link'>
+              <NavLink to="/alta_pacientes" activeClassName="active">
                 Alta Pacientes
               </NavLink>
             </li>
             <li>
-              <NavLink to="/pacientes" activeClassName="active" className='sidebar__link'>
+              <NavLink to="/pacientes" activeClassName="active">
                 Pacientes
               </NavLink>
             </li>

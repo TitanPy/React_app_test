@@ -4,12 +4,8 @@ import TablaPacientes from "./TablaPacientes";
 
 class Pacientes extends Component {
   render() {
-    var pStyle = {
-        display: 'flex', 
-        justifyContent: 'center'
-            }
     return (
-      <div style={pStyle}>
+      <div className='content'>
         <TablaPacientes />
       </div>
     );

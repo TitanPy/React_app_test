@@ -4,23 +4,29 @@
   margin: 0;
 }
 
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width:100%;
+}
+
 .header{
     background:#f1f1f1;
     height: 55px;
     width: 100%;
     border-bottom: 1px solid #ccc;
+    float: left;
+    position:fixed;
 }
 
 .header__logo{
     width: 3%;
     height: 40px;
-    padding-left: 14px;
-
+    padding-top:5px
+    
 }
 
 .header__title{
-    padding-bottom: 15px;
-    font-size: 25px
+    font-size: 25px;
 }
 
 .header__exit{
@@ -29,11 +35,14 @@
 }
 
 .sidebar{
-    background:#F1F1F1;
-    width: 10%;
-    position: fixed;
+    background:#f1f1f1;
+    width: 150px;
     height: 100%;
     border-right: 1px solid #ccc;
+    float:left;
+    margin-top: 56px;
+    position:fixed
+    
 }
 
 .sidebar__avatar{
@@ -51,34 +60,46 @@
 }
 
 .sidebar__menu li{
-    font-size: 20px;
+    font-size: 15px;
     padding: 15px 15px;
-} 
-
-.sidebar__link{
+    list-style:none;
     text-decoration: none;
 } 
 
+.sidebar__menu li:hover{
+    margin-left: 20px;
+    transition: 0.4s;
+}
 
-.altapaciente{
-    width:90%;
-    float:right;
+.content{
+    background:cadetblue;
+    margin:56px 0 0 150px;
+    width: 100%;
+    height: 100%;
+    position:fixed;
     
 }
 
-.form-altapaciente__nombre{
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-}
-.form-altapaciente__apellido{
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    float: rigth;
+.content__altapaciente{
+    padding-top:20px;
+    background: cadetblue;
+    text-align:center;
 }
 
+.form-altapaciente{
+    background: red;
+    text-align:left;
+    heigth:500px
 
+}
+.form-altapaciente__titulo{
+    margin:0 0 0 20px;
+    padding-top: 10px;
+    display:flex;
+    flex-direction: column;
+    width: 90%;
+}
 
+.form-altapaciente__textArea{
+    margin:0 0 0 20px;
+}

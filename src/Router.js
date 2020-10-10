@@ -11,7 +11,7 @@ import Pacientes from "./components/Pacientes";
 // import MiComponente2 from "./components/sample/MiComponente2";
 // import Peliculas from "./components/sample/Peliculas";
 // 
-import Error from "./components/sample/Error";
+import Error from "./components/Error";
 
 // // Sample
 // import Peliculas from './components/sample/Peliculas';

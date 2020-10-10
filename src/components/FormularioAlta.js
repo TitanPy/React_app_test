@@ -78,32 +78,32 @@ class FormularioAlta extends Component {
         )}
         {/* crear un formulario */}
         <form className='form-altapaciente' onSubmit={this.recibirFormulario}>
-          <div className="form-altapaciente__nombre">
+          <div className="form-altapaciente__titulo">
             <label htmlFor="nombre">Nombre:</label>
             <input name="nombre" ref={this.nombreRef} onChange={this.changeState}/>
           </div>
 
-          <div className="form-altapaciente__apellido">
-            <label htmlFor="apellidos">Apellidos</label>
-            <input type="text" name="apellidos" ref={this.apellidoRef} onChange={this.changeState} />
+          <div>
+            <label className="form-altapaciente__titulo" htmlFor="apellidos">Apellidos</label>
+            <input className="form-altapaciente__textArea" type="text" name="apellidos" ref={this.apellidoRef} onChange={this.changeState} />
           </div>
 
-          <div className="form-group">
+          <div className="form-altapaciente__titulo">
             <label htmlFor="fecha">Fecha de nacimiento</label>
-            <input type="date" name="fecha" ref={this.fechaRef} onChange={this.changeState} />
+            <input lassName="form-altapaciente__textArea" type="date" name="fecha" ref={this.fechaRef} onChange={this.changeState} />
           </div>
 
-          <div className="form-group">
+          <div className="form-altapaciente__titulo">
             <label htmlFor="email">Email</label>
             <input type="text" name="email" ref={this.emailRef} onChange={this.changeState}/>
           </div>
 
-          <div className="form-group">
+          <div className="form-altapaciente__titulo">
             <label htmlFor="telefono">Telefono</label>
             <input type="text" name="telefono" ref={this.telefonoRef} onChange={this.changeState} />
           </div>
 
-          <div className="form-group">
+          <div className="form-altapaciente__titulo">
             <label htmlFor="direccion">Dirección</label>
             <input type="text" name="direccion" ref={this.direccionRef} onChange={this.changeState}/>
           </div>

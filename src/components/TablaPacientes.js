@@ -30,7 +30,6 @@ class TablaPaciente extends Component {
   render() {
     var listaPacientes = this.state.pacientes.map((paciente) => {
       return (
-      
         <tr key={paciente._id}>
           <td><input type="checkbox" defaultChecked={this.state.chkbox} onChange={this.handleChangeChk}/>
             {this.state.chkbox === true &&

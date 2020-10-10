@@ -5,9 +5,11 @@ import FormularioAlta from './FormularioAlta';
 class AltaPaciente extends Component {
   render() {
     return (
-      <div className='altapaciente'>
-       <h1>SOY ALTA PACIENTE</h1>
-       <FormularioAlta />
+      <div className='content'>
+        <div className='content__altapaciente'>
+          <h1>SOY ALTA PACIENTE</h1>
+          <FormularioAlta />
+        </div>
       </div>
     );
   }
